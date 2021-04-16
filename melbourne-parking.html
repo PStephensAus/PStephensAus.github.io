@@ -55,12 +55,8 @@
 											should do this.</blockquote>
 										<h4>Approach</h4>
 										<p><code>pd.read_csv('../data/On-street_Car_Parking_Sensor_Data_-_2017.csv')</code></p>
-										<p>And then let the fun begin! 36M rows of data to clean and shape in python before it can be used. The method chosen to determine which bays could be replaced, was to look at the utilisation for the individual parking bays.
-											Bays which spent longer vacant, could then be looked at as potential removal options. For the breaches, the average time spent in the bay compared to the limit was calculated.</p>
-										<!--<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									-->
+										<p>And then let the fun begin! 36M rows of data to clean and shape in python before it can be used. The method chosen to determine which bays could be replaced was to extract the utilisation for the individual parking bays.
+											Bays which spent longer time vacant, could then be identified as potential options for removal. For the breaches, the average time spent in the bay compared to the limit was calculated.</p>
 										<hr />
 										<h4>Result</h4>
 										<p>The end result was three part;</p>
@@ -74,7 +70,7 @@
 										A hypothesis can be formed from this that: Drivers parking at Victoria Market are there to shop, so they pick up what they need and leave before the parking limit comes close to being breached, on average.</p>
 										<span class="image fit"><img src="images/parking-notebook.png" alt="" /></span>
 										<p>The dashboard is interactive and provides the user the ability to choose which areas/types of parking to focus on.
-											The main function of the dashboard is to provide an insight into which areas have parking that are vacant below a threshold that the user sets.</p>
+										The main function of the dashboard is to provide an insight into the percentage of time parking bays remain vacant, and the geographical location the bays.</p>
 										<span class="image fit"><img src="images/parking.jpg" alt="" /></span>
 									</div>
 								</section>
